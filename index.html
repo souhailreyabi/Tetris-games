@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris Game</title>
+    
+    <!-- Google Fonts for a retro look -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Game Title -->
+    <h1>Tetris Game</h1>
+
+    <!-- Information about the developers -->
+    <p>Developed by 
+    <a href="https://www.linkedin.com/in/souhail-reyabi">Souhail Reyabi</a></p>
+
+    <!-- Game Instructions -->
+    <div class="instructions">
+        <h3>How to Play:</h3>
+        <p><i class="fas fa-arrow-left"></i> Move Left</p>
+        <p><i class="fas fa-arrow-right"></i> Move Right</p>
+        <p><i class="fas fa-arrow-down"></i> Move Down Faster</p>
+        <p><i class="fas fa-arrow-up"></i> Rotate Piece</p>
+    </div>
+
+    <!-- Game Container -->
+    <div class="game-container">
+        <!-- Tetris Game Canvas -->
+        <canvas id="tetris" width="300" height="600"></canvas>
+        
+        <!-- Game Info Section -->
+        <div class="game-info">
+            <h2>Score: <span id="score">0</span></h2>
+
+            <!-- Next Piece Preview -->
+            <div class="next-piece">
+                <h3>Next Piece</h3>
+                <canvas id="next-piece" width="120" height="120"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start Button -->
+    <button id="start-button">Start Game</button>
+
+    <!-- Link to JavaScript file -->
+    <script src="tetris.js"></script>
+
+</body>
+</html>
